@@ -279,5 +279,355 @@ int main(){
 
 */
 
-  /* */
+/* 
+// Print Pattern
+ 
+// AAAA  
+// BBBB      
+// CCCC      
+// DDDD
+
+    int i = 1, j, n;
+    cout << "Enter n : ";
+    cin >> n;
+    while (i <= n){
+    j=1;
+    while(j<=n){
+        char a='A'+i-1;
+        cout<<a;
+        j++;
+    }
+    cout<<endl;
+    i++;
+    }
+*/
+
+/*
+// Print Pattern
+ 
+// ABC  
+// ABC      
+// ABC      
+
+    int i = 1, j, n;
+    cout << "Enter n : ";
+    cin >> n;
+    while (i <= n){
+        j=1;
+        while(j<=n){
+            char ch='A'+j-1;
+            cout<<ch;
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+*/
+
+/*
+// Print Pattern
+ 
+// ABC  
+// BCD      
+// DEF      
+
+    int i = 1, j, n;
+    cout << "Enter n : ";
+    cin >> n;
+    while (i <= n){
+        j=1;
+        // char ch='A'+i-1;
+        // while(j<=n){                            //or if you poluate value of ch in  341 then formula will be 'A'+i+j-2
+        //     char ch1=ch+j-1;
+        //     cout<<ch1;
+        //     j++;
+        // }
+
+        //or 
+
+        // while(j<=n){
+        // char ch='A'+i+j-2;
+        // cout<<ch;
+        // j++;
+        // }
+
+        //or 
+        
+        char ch='A'+i-1;
+        while(j<=n){
+            cout<<ch;
+            ch++;
+            j++;
+        }
+
+
+        cout<<endl;
+        i++;
+    }  
+*/
+
+/*
+// Print Pattern
+ 
+// D 
+// CD      
+// BCD
+// ABCD      
+
+    int i = 1, j, n;
+    cout << "Enter n : ";
+    cin >> n;
+    while (i <= n){
+    // j=1;
+    // while(j<=i){
+    //     char ch='A'+n-i+j-1;
+    //     cout<<ch;
+    //     j++;
+    // }
+
+    //or 
+    j=1;
+    char ch='A'+n-i;
+    while(j<=i){
+        cout<<ch;
+        j++;
+        ch+=1;
+    }
+    cout<<endl;
+    i++;
+    }
+*/
+
+/* 
+// Print Pattern
+ 
+//     *  
+//    ** 
+//   ***      
+//  ****
+// *****
+
+    int i = 1, j, n, s;
+    cout << "Enter n : ";
+    cin >> n;
+    while (i <= n)
+    {
+        j = 1;
+        s = 1;
+        while (s <= n - i)
+        {
+            cout << " ";
+            s++;
+        }
+        while (j <= i)
+        {
+            cout << "*";
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
+*/
+
+/*
+// Print Pattern
+ 
+// 1111  
+//  222 
+//   33     
+//    4
+
+    int i = 1, j, n, s;
+    cout << "Enter n : ";
+    cin >> n;
+    while (i <= n)
+    {
+        j = 1;
+        s = 1;
+        while (s <= i-1)
+        {
+            cout << " ";
+            s++;
+        }
+        while (j <= n-i+1)
+        {
+            cout << i;
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
+*/
+
+/*
+// Print Pattern
+ 
+//    1  
+//   22 
+//  333     
+// 4444
+
+    int i = 1, j, n, s;
+    cout << "Enter n : ";
+    cin >> n;
+    while (i <= n)
+    {
+        j = 1;
+        s = 1;
+        while (s <= n-i)
+        {
+            cout << " ";
+            s++;
+        }
+        while (j <= i)
+        {
+            cout << i;
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
+*/
+
+/*
+// Print Pattern
+ 
+// 1234  
+//  234 
+//   34     
+//    4
+
+    int i = 1, j, n, s;
+    cout << "Enter n : ";
+    cin >> n;
+    while (i <= n)
+    {
+        j = 1;
+        s = 1;
+        while (s <= i-1)
+        {
+            cout << " ";
+            s++;
+        }
+        while (j <= n-i+1)
+        {
+            cout << i+j-1;
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
+*/
+
+/*
+// Print Pattern
+ 
+//        1    
+//      2 3 
+//    4 5 6     
+// 7 8 9 10
+
+    int i = 1, j, n, s,counter=1;
+    cout << "Enter n : ";
+    cin >> n;
+    while (i <= n)
+    {
+        j = 1;
+        s = 1;
+        while (s <= n-i)
+        {
+            cout << "  ";
+            s++;
+        }
+        while (j <= i)
+        {
+            cout << counter<<" ";
+            j++;
+            counter++;
+
+        }
+        cout << endl;
+        i++;
+    }
+*/
+
+/*
+// Print Pattern
+ 
+//    1    
+//   121 
+//  12321    
+// 1234321
+
+    int i = 1, j,k, n, s;
+    cout << "Enter n : ";
+    cin >> n;
+    while (i <= n)
+    {
+        s = 1;
+        while (s <= n-i)
+        {
+            cout << " ";
+            s++;
+        }
+        j = 1;
+        while (j <= i)
+        {
+            cout <<j;
+            j++;
+        }
+        k=i-1;
+        while(k){
+            cout<<k;
+            k--;
+        }
+        cout << endl;
+        i++;
+    }
+*/
+
+/*
+// Print Pattern
+ 
+// 12345677654321
+// 123456**654321
+// 12345****54321
+// 1234******4321
+// 123********321
+// 12**********21
+// 1************1
+
+    int i = 1, j, k, n, s;
+    cout << "Enter n : ";
+    cin >> n;
+    while (i <= n)
+    {
+        j = 1;
+        while (j <= n-i+1)
+        {
+            cout << j;
+            j++;
+        }
+
+        j=i-1;
+        while(j){
+            cout<<"*";
+            j--;
+        }
+        j=i-1;
+        while(j){
+            cout<<"*";
+            j--;
+        }
+        j = n - i + 1;
+        while (j)
+        {
+            cout << j;
+            j--;
+        }
+        cout << endl;
+        i++;
+    }
+*/
+   
 }
